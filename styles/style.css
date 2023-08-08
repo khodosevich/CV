@@ -181,6 +181,12 @@ body {
     margin-bottom: 30px;
 }
 
+@media (max-width: 800px) {
+    .about {
+        margin-bottom: 10px;
+    }
+}
+
 .about:last-child {
     margin-bottom: 0;
 }
@@ -228,17 +234,17 @@ body {
     margin-top: 5px;
 }
 
-.about.box h4 a {
-    max-width: 60%;
+.about.box {
+    padding: 20px;
 }
 
-.linkProject a {
-    color: #03a9f4;
 
+.linkProject {
+    color: #03a9f4;
 }
 
 .linkToProject {
-    max-width: 200px;
+
 }
 
 .listHobbies {
@@ -254,9 +260,6 @@ body {
     cursor: default;
 }
 
-.titleHobbies {
-    font-size: 1.3em;
-}
 
 @media (max-width: 1000px) {
     .container {
@@ -281,6 +284,15 @@ body {
 
     .about .box {
         padding: 0 10px;
+    }
+
+
+    .listHobbies li {
+        font-size: 16px;
+    }
+
+    .hobbies {
+        padding-bottom: 20px;
     }
 
 }
