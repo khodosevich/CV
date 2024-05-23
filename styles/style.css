@@ -1,64 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
-* {
-    font-family: "Poppins",sans-serif;
-}
-
-body {
-    background: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    cursor: default;
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    background: #000;
-    margin: 50px;
-
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.1) ;
-
-}
-
-.container .left_side {
+.left__side {
     position: relative;
     background: #003147;
-    padding: 20px;
+    padding: 40px;
 }
 
-.profileText {
+.profile {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.imgBx img{
-    max-width: 200px;
-    max-height: 200px;
-    min-width: 200px;
-    min-height: 200px;
+.profile__img {
     border-radius: 50%;
     object-fit: cover;
 }
 
-@media (max-width: 700px) {
-    .imgBx img{
-        max-width: 200px;
-        max-height: 200px;
-    }
-}
-
-.name {
+.profile__name {
     cursor: default;
     color: #fff;
     font-size: 1.3em;
@@ -69,80 +29,75 @@ body {
     line-height: 1.4em;
 }
 
-
-
-.position {
+.profile__position {
     color: #fff;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.2em;
 }
 
-
-.profileText h2 span {
-    font-size: 0.8em;
-    font-weight: 300;
-}
-
-
-.contactInfo {
+.contact {
     padding-top: 40px;
 }
 
-
-.title {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.contactInfo ul {
-    position: relative;
-}
-
-.contactInfo ul li {
-    position: relative;
+.contact__item {
+    display: flex;
+    align-items: center;
     margin: 10px 0;
-    cursor: default;
+    color: #fff;
 }
 
-.icon {
+.contact__text {
+    font-weight: 300;
+}
+
+.contact__link {
+    color: inherit;
+}
+
+.contact__icon {
     display: inline-block;
     width: 30px;
     font-size: 20px;
     color: #03a9f4;
 }
 
-.contactInfo ul li .text {
-    color: #fff;
-    font-weight: 300;
+.social-media {
+    display: flex;
+    margin-block: 15px;
+    gap: 20px;
 }
 
-.contactInfo.education li {
-    margin-bottom: 15px;
+.education__date, .education__name,
+.education__major {
+    margin-bottom: 5px;
 }
 
-.contactInfo.education h5 {
+.education__date {
     color: #03a9f4;
     font-weight: 600;
 }
 
-
-.contactInfo.education h4:nth-child(2) {
+.education__name {
     color: #fff;
     font-weight: 500;
 }
 
-.contactInfo.education h4 {
+.education__major {
     color: #fff;
     font-weight: 300;
     font-size: 15px;
 }
 
+.language__item {
+    margin-bottom: 15px;
+}
 
-.contactInfo.language .percent {
+.language__text {
+    color: #fff;
+}
+
+.language__percent {
     position: relative;
     width: 100%;
     height: 6px;
@@ -151,7 +106,7 @@ body {
     margin-top: 5px;
 }
 
-.contactInfo.language .percent div {
+.language__percent div {
     position: absolute;
     top: 0;
     left: 0;
@@ -159,141 +114,120 @@ body {
     background: #03a9f4;
 }
 
-
-.container .right_side {
-    position: relative;
+.right__side {
     background: #fff;
     padding: 40px;
-}
-
-@media (max-width: 600px) {
-
-    .container .right_side {
-        padding: 5px;
-    }
-
-    .title2 {
-        padding: 10px;
-    }
 }
 
 .about {
     margin-bottom: 30px;
 }
 
-@media (max-width: 800px) {
-    .about {
-        margin-bottom: 10px;
-    }
-}
-
-.about:last-child {
-    margin-bottom: 0;
-}
-
-.subtitle {
+.about__subtitle {
     width: 100%;
-}
-
-@media (max-width: 600px) {
-    .subtitle {
-        padding: 10px;
-    }
-}
-
-
-.title2 {
-    color: #003147;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-}
-
-.about p {
     color: #333;
 }
 
-.about.skill ul li {
-    list-style: initial;
-    margin-left: 15px;
-    margin-top: 7px;
+.skills__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.box.linkProject{
-    max-width: 300px;
+.skills__subtitle {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.titleProject {
+.experience {
+    margin-block: 30px;
+}
+
+.experience__position {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.experience__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experience__time {
+    color: #a9a9a9;
+}
+
+.experience__link {
+    color: #fb993b;
+    font-size: 18px;
+    transition: color .4s;
+}
+
+.experience__link:hover {
+    color: #f24e42;
+}
+
+.project__box {
+    margin-bottom: 20px;
+}
+
+.project__title {
     font-weight: 500;
     margin-top: 15px;
 }
 
-.linkProject  {
+.project__link {
+    display: block;
     margin-top: 5px;
-}
-
-.about.box {
-    padding: 20px;
-}
-
-
-.linkProject {
     color: #03a9f4;
 }
 
-.listHobbies {
+.project__deploy {
+    display: block;
+    color: #07DC5FFF;
+}
+
+.hobbies__menu {
     display: flex;
     gap: 25px;
 }
 
-
-.listHobbies li {
+.hobbies__item {
     list-style: initial;
     margin-left: 15px;
     font-size: 20px;
     cursor: default;
 }
 
-
 @media (max-width: 1000px) {
     .container {
         margin: 10px;
-        grid-template-columns: repeat(1,1fr) ;
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .imgBx img{
-        width: 400px;
-        height: 400px;
-    }
-
-    .listHobbies {
+    .hobbies__menu {
         flex-direction: column;
         gap: 0;
-        margin-left: 20px;
     }
 
-    .about.skill ul li  {
-        margin-left: 35px;
-    }
-
-    .about .box {
-        padding: 0 10px;
-    }
-
-
-    .listHobbies li {
+    .hobbies__item {
         font-size: 16px;
     }
-
-    .hobbies {
-        padding-bottom: 20px;
-    }
-
 }
 
+@media (max-width: 480px) {
+    .left__side,
+    .right__side {
+        padding: 20px;
+    }
 
-.deploy {
-    color: rgb(7, 220, 95);
+    .title_secondary {
+        font-size: 18px;
+    }
+
+    .experience__title {
+        font-size: 16px;
+    }
 }

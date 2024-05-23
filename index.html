@@ -3,219 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>CV - Khodosevich</title>
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
     <div class="container">
-        <div class="left_side">
-            <div class="profileText">
-                <div class="imgBx">
-                    <img src="./assets/matvey.JPG" alt="">
-                </div>
-                <h2 class="name">Matvey Khodosevich</h2>
-                <p class="position">Frontend developer</p>
+        <div class="left__side">
+            <div class="profile">
+                <img class="profile__img" src="./assets/matvey.JPG" width="200" height="200" alt="">
+                <h2 class="profile__name">Matvey Khodosevich</h2>
+                <p class="profile__position">Junior Frontend developer</p>
             </div>
-            <div class="contactInfo">
+            <div class="contact">
                 <h3 class="title">Contact Info</h3>
-                <ul>
-                    <li>
-                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span class="text">
-                            <a href="tel:+375447820350">+375 (44) 7820350</a>
-                        </span>
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <span class="contact__icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <a class="contact__link" href="tel:+375447820350">+375 (44) 7820350</a>
                     </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <span class="text">khodosevich03@gmail.com</span>
+                    <li class="contact__item">
+                        <span class="contact__icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <div class="contact__text">khodosevich03@gmail.com</div>
                     </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-telegram" aria-hidden="true"></i></span>
-                        <span class="text">@khodosevichm</span>
+                    <li class="contact__item">
+                        <span class="contact__icon"><i class="fa fa-telegram" aria-hidden="true"></i></span>
+                        <div class="contact__text">@khodosevichm</div>
                     </li>
-                     <li>
-                       <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                         <span class="text">
-                             <a target="_blank" href="https://github.com/khodosevich">https://github.com/khodosevich</a>
-                         </span>
-                     </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span class="text">Minsk , Belarus</span>
+                    <li class="contact__item">
+                        <span class="contact__icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                        <a class="contact__link" target="_blank" href="https://github.com/khodosevich">https://github.com/khodosevich</a>
+                    </li>
+                    <li class="contact__item">
+                        <span class="contact__icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <div class="contact__text">Minsk , Belarus</div>
                     </li>
                 </ul>
             </div>
-
-            <div style="display: flex; gap: 20px">
-                <a href="https://www.github.com/khodosevich" target="_blank" rel="noreferrer">
-                   <img src="https://skillicons.dev/icons?i=github" />
+            <div class="social-media">
+                <a href="https://www.github.com/khodosevich" target="_blank">
+                    <img src="https://skillicons.dev/icons?i=github" alt=""/>
                 </a>
-                <a href="https://www.instagram.com/_khodosevich_" target="_blank" rel="noreferrer">
-                     <img src="https://skillicons.dev/icons?i=instagram" />
+                <a href="https://www.instagram.com/_khodosevich_" target="_blank">
+                    <img src="https://skillicons.dev/icons?i=instagram" alt=""/>
                 </a>
                 <a href="https://www.linkedin.com/in/matvey-khodosevich-30b2a7239" target="blank">
-                    <img src="https://skillicons.dev/icons?i=linkedin" />
-                </a>    
+                    <img src="https://skillicons.dev/icons?i=linkedin" alt=""/>
+                </a>
             </div>
-
-
-            <div class="contactInfo education">
+            <div class="education">
                 <h3 class="title">Education</h3>
-                <ul>
-                    <li>
-                        <h5>2021 - Present</h5>
-                        <h4>BSUIR</h4>
-                        <h4>Computer Systems and Networks</h4>
-                    </li>
-                </ul>
+                <div class="education__date">2021 - Present</div>
+                <div class="education__name">BSUIR</div>
+                <div class="education__major">Computer Systems and Networks</div>
             </div>
-            <div class="contactInfo education language">
+            <div class="language">
                 <h3 class="title">Languages</h3>
-                <ul>
-                    <li>
-                        <span class="text">English</span>
-                        <span class="percent">
-                            <div style="width: 55%"></div>
-                        </span>
+                <ul class="language__list">
+                    <li class="language__item">
+                        <div class="language__text">English</div>
+                        <span class="language__percent">
+                                <div style="width: 55%"></div>
+                            </span>
                     </li>
-                    <li>
-                        <span class="text">Russian</span>
-                        <span class="percent">
-                            <div style="width: 100%"></div>
-                        </span>
+                    <li class="language__item">
+                        <div class="language__text">Russian</div>
+                        <span class="language__percent">
+                                <div style="width: 100%"></div>
+                            </span>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="right_side">
+        <div class="right__side">
             <div class="about">
-                <h2 class="title2">Profile</h2>
-                <p class="subtitle">
-                    &nbsp;&nbsp;&nbsp;&nbsp; My name is Matvey Khodosevich, and I am 20 years old. I am a young and ambitious individual looking for new opportunities in the world of web development. My passion for coding and desire to learn and grow in this field drive me to seek exciting challenges and projects. I am eager to contribute my skills and knowledge to a dynamic team that values innovation and creativity. Let's build a better future together!
+                <h2 class="title_secondary">Profile</h2>
+                <p class="about__subtitle">
+                    &nbsp;&nbsp;&nbsp;&nbsp; My name is Matvey Khodosevich, and I am 20 years old. I am a young and
+                    ambitious individual looking for new opportunities in the world of web development. My passion for
+                    coding and desire to learn and grow in this field drive me to seek exciting challenges and projects. I
+                    am eager to contribute my skills and knowledge to a dynamic team that values innovation and creativity.
+                    Let's build a better future together!
                 </p>
             </div>
-
-            <div>
-
-                <h3 style="margin-bottom: 15px; font-weight: 600;">⚡ Skills</h3>  
-
-                    <h4 style="margin-bottom: 15px;">👨🏻‍💻 Frontend</h4> 
-
-                    <div style="margin-bottom: 10px;">
-                        <img src="https://skillicons.dev/icons?i=react" />
-                        <img src="https://skillicons.dev/icons?i=html" />
-                        <img src="https://skillicons.dev/icons?i=css" />
-                        <img src="https://skillicons.dev/icons?i=js" />
-                        <img src="https://skillicons.dev/icons?i=ts" />
-                        <img src="https://skillicons.dev/icons?i=webpack" />
-                        <img src="https://skillicons.dev/icons?i=vite" />
-                        <img src="https://skillicons.dev/icons?i=sass" />
-                        <img src="https://skillicons.dev/icons?i=materialui" />
-                        <img src="https://skillicons.dev/icons?i=babel" />
-                    </div>
-
-                     <h4 style="margin-bottom: 15px;">🛠 Tools:</h4>
-
-                    <div style="margin-bottom: 10px;">
-                        <img src="https://skillicons.dev/icons?i=git" />
-                        <img src="https://skillicons.dev/icons?i=github" />
-                        <img src="https://skillicons.dev/icons?i=gitlab" />
-                        <img src="https://skillicons.dev/icons?i=vscode" />
-                        <img src="https://skillicons.dev/icons?i=figma" />
-                        <img src="https://skillicons.dev/icons?i=postman" />
-                        <img src="https://skillicons.dev/icons?i=docker" />
-                    </div>
-
-                    <h4 style="margin-bottom: 15px;">🎓 Studied at university:</h4>
-
-                    <div style="margin-bottom: 15px;">
-                        <img src="https://skillicons.dev/icons?i=c" />
-                        <img src="https://skillicons.dev/icons?i=cpp" />
-                        <img src="https://skillicons.dev/icons?i=java" />
-                        <img src="https://skillicons.dev/icons?i=spring" />
-                        <img src="https://skillicons.dev/icons?i=scala" />
-                        <img src="https://skillicons.dev/icons?i=linux" />
-                        <img src="https://skillicons.dev/icons?i=mysql" />
-                        <img src="https://skillicons.dev/icons?i=postgres" />
-                    </div>  
-
+            <div class="skills">
+                <h3 class="skills__title title_secondary">⚡ Skills:</h3>
+                <div class="skills__subtitle">👨🏻‍💻 Frontend:</div>
+                <div>
+                    <img src="https://skillicons.dev/icons?i=react" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=js" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=ts" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=redux" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=html" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=css" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=webpack" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=vite" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=sass" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=materialui" alt=""/>
+                </div>
+                <div class="skills__subtitle">🛠 Tools:</div>
+                <div>
+                    <img src="https://skillicons.dev/icons?i=git" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=rider" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=webstorm" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=vscode" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=figma" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=postman" alt=""/>
+                    <img src="https://skillicons.dev/icons?i=docker" alt=""/>
+                </div>
             </div>
-                
-            <div class="about">
-                <h2 class="title2">
+            <div class="experience">
+                <h2 class="title_secondary">
+                    Experience:
+                </h2>
+                <div class="experience__box">
+                    <div class="experience__position">
+                        <div class="experience__title">
+                            Junior Frontend Developer
+                        </div>
+                        <div class="experience__time">
+                            01/24 - Present
+                        </div>
+                    </div>
+                    <a class="experience__link" target="_blank" href="https://avtobus1.ru/">Autobus1.ru</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2 class="title_secondary">
                     Projects
                 </h2>
-                <div class="box">
-                    <h3 class="titleProject">
-                      LuxeLooks online store:
-                    </h3>
-                    <h4 class="linkProject">
-                        <a class="linkToProject" target="_blank" href="https://github.com/khodosevich/LuxeLooks">github.com/khodosevich/LuxeLooks</a>
-                    </h4>
+                <div class="project__box">
+                    <h3 class="project__title">LuxeLooks online store:</h3>
+                    <a class="project__link" target="_blank" href="https://github.com/khodosevich/LuxeLooks">github.com/khodosevich/LuxeLooks</a>
                 </div>
-                <div class="box">
-                    <h3 class="titleProject">
-                        Trello-clone:
-                    </h3>
-                    <h4 class="linkProject">
-                        <a class="linkToProject" target="_blank" href="https://github.com/khodosevich/task-manager">github.com/khodosevich/trello-clone</a>
-                    </h4>
-                    <h5 class="deploy">
-                        <a class="deploy" target="_blank" href="http://api.task-manager.maketfay.com">Deploy</a>
-                    </h5>
+                <div class="project__box">
+                    <h3 class="project__title">Trello-clone:</h3>
+                    <a class="project__link" target="_blank" href="https://github.com/khodosevich/task-manager">github.com/khodosevich/trello-clone</a>
+                    <a class="project__deploy" target="_blank" href="http://api.task-manager.maketfay.com">Deploy</a>
                 </div>
-                <div class="box">
-                    <h3 class="titleProject">
-                        Crypto Tracker:
-                    </h3>
-                    <h4 class="linkProject">
-                        <a class="linkToProject" target="_blank" href="https://github.com/khodosevich/crypto-app">github.com/khodosevich/crypto-app</a>
-                    </h4>
-                    <h5 class="deploy">
-                        <a class="deploy" target="_blank" href="https://khodosevich.github.io/crypto-app/">Deploy</a>
-                    </h5>
+                <div class="project__box">
+                    <h3 class="project__title">Crypto Tracker:</h3>
+                    <a class="project__link" target="_blank" href="https://github.com/khodosevich/crypto-app">github.com/khodosevich/crypto-app</a>
+                    <a class="project__deploy" target="_blank" href="https://khodosevich.github.io/crypto-app/">Deploy</a>
                 </div>
-                <div class="box">
-                    <h3 class="titleProject">
-                        Weather App:
-                    </h3>
-                    <h4 class="linkProject">
-                        <a class="linkToProject" target="_blank" href="https://github.com/khodosevich/weather-app">github.com/weather-app</a>
-                    </h4>
-                    <h5 class="deploy">
-                        <a class="deploy" target="_blank" href="https://khodosevich.github.io/weather-app/">Deploy</a>
-                    </h5>
+                <div class="project__box">
+                    <h3 class="project__title">Weather App:</h3>
+                    <a class="project__link" target="_blank" href="https://github.com/khodosevich/weather-app">github.com/weather-app</a>
+                    <a class="project__deploy" target="_blank" href="https://khodosevich.github.io/weather-app/">Deploy</a>
                 </div>
-                <div class="box">
-                    <h3 class="titleProject">
-                         Simple ToDo App:
-                    </h3>
-                    <h4 class="linkProject">
-                        <a class="linkToProject" target="_blank" href="https://github.com/khodosevich/to-do-list">github.com/khodosevich/to-do-list</a>
-                    </h4>
+                <div class="project__box">
+                    <h3 class="project__title">Simple ToDo App:</h3>
+                    <a class="project__link" target="_blank" href="https://github.com/khodosevich/to-do-list">github.com/khodosevich/to-do-list</a>
                 </div>
             </div>
-
-            <div>
-
-            <div class="about hobbies ">
-                <h3 class="title2">Hobbies</h3>
-                <ul class="listHobbies">
-                    <li class="titleHobbies">
+            <div class="hobbies">
+                <h3 class="title_secondary">Hobbies</h3>
+                <ul class="hobbies__menu">
+                    <li class="hobbies__item">
                         Running
                     </li>
-                    <li class="titleHobbies">
-                         Walking
-                    </li >
-                    <li class="titleHobbies">
-                       Reading
+                    <li class="hobbies__item">
+                        Walking
                     </li>
-                    <li class="titleHobbies">
-                         Movies
+                    <li class="hobbies__item">
+                        Reading
+                    </li>
+                    <li class="hobbies__item">
+                        Movies
                     </li>
                 </ul>
             </div>

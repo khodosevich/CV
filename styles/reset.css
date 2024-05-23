@@ -1,7 +1,6 @@
-/* Reset and base styles  */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     border: none;
 }
 
@@ -11,17 +10,13 @@
     box-sizing: border-box;
 }
 
-/* Links */
-
 a, a:link, a:visited  {
     text-decoration: none;
-    color: inherit;
 }
 
 a:hover  {
     text-decoration: none;
 }
-
 
 h1, h2, h3, h4, h5, h6, p {
     font-size: inherit;
@@ -31,6 +26,3 @@ h1, h2, h3, h4, h5, h6, p {
 ul, ul li {
     list-style: none;
 }
-
-
-
